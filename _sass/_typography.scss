@@ -15,12 +15,9 @@ body {
 body,
 input,
 textarea {
-	.noto-serif kr-regular {
-  				font-family: "Noto Serif KR", serif;
- 				font-weight: 400;
-  				font-style: normal;
-				}
 
+  	font-family: "Noto Serif KR", serif;
+ 	font-weight: 400;
 	color: #3A4145;
 	text-rendering: geometricPrecision;
 }
@@ -32,11 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-	.noto-serif kr-regular {
-  				font-family: "Noto Serif KR", serif;
- 				font-weight: 400;
-  				font-style: normal;
-				}
+  	font-family: "Noto Serif KR", serif;
 	font-weight: 400;
 	text-transform: uppercase;
 }
