@@ -3,9 +3,9 @@
     - name: Home
       link: /
     - name: 인사말
-      link: /인사말/
+      link: /about/
     - name: 업체등록현황
-      link: /업체등록현황/
+      link: /introduce/
     - name: Services
       link: /services/
     - name: Contact
