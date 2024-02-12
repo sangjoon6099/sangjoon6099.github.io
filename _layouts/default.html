@@ -17,6 +17,7 @@
 		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');">
 			<div class="container">
 				<h2><a href="{{ site.baseurl }}/"><img src ="../images/logo.png" width="30%"></a></h2>
+				<br>
 				<nav>
 					<ul>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
