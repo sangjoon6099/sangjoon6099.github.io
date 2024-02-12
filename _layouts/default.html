@@ -55,15 +55,16 @@
 						<ul class="footer-links">
 							<li>
 								<h2>{{ column.title }}</h2>
-							</li>
-							<nav>
+							</li>						
 							{% for link in column.links %}
 							<li>
+							<ul>
 							<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}">
 							{{ link.name }}</a>
+							</ul>
 							</li>
 							{% endfor %}
-							</nav>
+							
 						</ul>
 					{% endfor %}
 
