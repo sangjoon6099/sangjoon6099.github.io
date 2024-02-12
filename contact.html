@@ -1,0 +1,67 @@
+---
+title: Contact
+call_to_action: Map
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 4
+---
+
+<p class="editable">
+	자세한 문의사항있으면 연락부탁드립니다.<br>
+	전화 문의: 평일 9:00AM ~ 17:30PM
+	
+</p>
+
+<div class="columns">
+	<div class="column">
+		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
+
+		<label>Phone Number</label>
+		<p class="contact-info"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></p>
+		
+		<label>Fax Number</label>
+		<p class="contact-info"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.fax }}</a></p>
+
+		<label>Email Address</label>
+		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
+		
+		<label>Address</label>
+		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
+	</div>
+
+<div class="column">
+<form onsubmit="sendEmail(event)">
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">내용:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <input type="submit" value="보내기">
+</form>
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var subject = "[문의] " + name;
+        var body = "이름: " + name + "\n이메일: " + email + "\n내용: " + message;
+        var mailtoLink = "mailto:uidae@naver.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+    }
+</script>
+</div>
+</div>
+
+<p style="font-size:80%"><b>찾아 오시는 길(지도에 '길찾기' 혹은 '큰 지도 보기'를 클릭하세요)</b></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.3698339447687!2d127.01734401216663!3d37.56990812381696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca34874b4c05f%3A0x1998c0d4fb83958!2z7ISc7Jq47Yq567OE7IucIOykkeq1rCDrgpzqs4TroZwxN-q4uCA2Mg!5e0!3m2!1sko!2skr!4v1707723225605!5m2!1sko!2skr" 
+	width="100%" 
+	height="450" 
+	style="border:0;" 
+	allowfullscreen="" 
+	loading="lazy" 
+	referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
