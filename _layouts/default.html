@@ -18,7 +18,7 @@
 			<div class="container">
 				<a href="{{ site.baseurl }}/"><img src ="../images/logo.png" width="30%"></a>
 				<br>
-				<nav style="color:#3a783f; font-size:2.7rem">
+				<nav>
 					<u1>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
 						{% for nav_page in nav_pages %}
@@ -56,12 +56,14 @@
 							<li>
 								<h2>{{ column.title }}</h2>
 							</li>
+							<nav>
 							{% for link in column.links %}
 							<li>
 							<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}">
 							{{ link.name }}</a>
 							</li>
 							{% endfor %}
+							</nav>
 						</ul>
 					{% endfor %}
 
