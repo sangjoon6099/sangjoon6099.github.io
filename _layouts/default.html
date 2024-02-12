@@ -18,8 +18,7 @@
 			<div class="container">
 				<a href="{{ site.baseurl }}/"><img src ="../images/logo.png" width="30%"></a>
 				<br>
-				<nav>
-					<ul style="color:#3a783f">
+				<nav style="color:#3a783f; font-size:2.7rem">
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
 						{% for nav_page in nav_pages %}
 							{% if previous_page.path != nav_page.path %}
@@ -27,7 +26,6 @@
 								<li><a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></li>
 							{% endif %}
 						{% endfor %}
-					</ul>
 				</nav>
 			</div>
 		</header>
