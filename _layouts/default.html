@@ -56,16 +56,12 @@
 							<li>
 								<h2>{{ column.title }}</h2>
 							</li>
-							<nav>
-								<ul>
 							{% for link in column.links %}
 							<li>
 							<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}">
 							{{ link.name }}</a>
 							</li>
 							{% endfor %}
-							</ul>
-							</nav>	
 							</ul>
 					{% endfor %}
 
