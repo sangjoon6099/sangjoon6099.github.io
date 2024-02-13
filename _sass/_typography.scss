@@ -6,11 +6,13 @@ html {
 		font-size: 10px;
 	}
 }
-.noto-serif kr-regular {
-  font-family: "Noto Serif KR", serif;
-  font-weight: 600;
+.noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
+
 body {
 	line-height: 1.75;
 	font-size: 2em;
