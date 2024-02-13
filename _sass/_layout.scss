@@ -152,10 +152,9 @@ footer {
 .columns {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -20px;
-
 	.column {
 		flex: 1 1 250px;
+		margin-left:20px;
 	}
 }
 .light-section {
