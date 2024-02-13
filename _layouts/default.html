@@ -23,7 +23,7 @@
 						{% for nav_page in nav_pages %}
 							{% if previous_page.path != nav_page.path %}
 								{% assign previous_page = nav_page %}
-								<li><h3><a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></h3></li>
+								<li><h4><a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></h4></li>
 							{% endif %}
 						{% endfor %}
 					</ul>
