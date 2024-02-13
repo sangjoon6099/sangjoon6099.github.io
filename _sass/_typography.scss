@@ -10,7 +10,10 @@ body {
 	line-height: 1.75;
 	font-size: 2em;
 }
-
+@font-face{
+	src:url("../fonts/general.lee.ttf");
+	font-family:"general.lee";
+}
 body,
 input,
 textarea {
