@@ -11,8 +11,11 @@ body {
 	font-size: 2em;
 }
 @font-face{
-	src:url("../fonts/general.lee.ttf");
-	font-family:"general.lee";
+	src:url("../fonts/general.ttf");
+	font-family:"general";
+}
+#general_font{
+	font-family:"general";
 }
 body,
 input,
