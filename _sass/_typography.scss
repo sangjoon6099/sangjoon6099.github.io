@@ -29,10 +29,13 @@ h3,
 h4,
 h5,
 h6 {
-  	font-family: "Noto Serif KR", serif;
-	font-weight: 400;
-	text-transform: uppercase;
+  	.noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
+
 
 h1,
 h2,
@@ -40,9 +43,13 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	letter-spacing: 0.18em;
-	line-height: 1.5;
+	.noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 	&:not(:first-child) {
 		margin-top: 2.2em;
