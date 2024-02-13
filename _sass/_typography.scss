@@ -15,9 +15,7 @@ body {
 body,
 input,
 textarea {
-
-  	font-family: "Noto Serif KR", serif;
- 	font-weight: 400;
+	font-family: 'Vollkorn', Georgia, serif;
 	color: #3A4145;
 	text-rendering: geometricPrecision;
 }
@@ -29,13 +27,10 @@ h3,
 h4,
 h5,
 h6 {
-  	.noto-sans kr-<uniquifier> {
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+	font-family: 'Quattrocento', Georgia, serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
-
 
 h1,
 h2,
@@ -43,13 +38,9 @@ h3,
 h4,
 h5,
 h6 {
-	.noto-sans kr-<uniquifier> {
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
+	margin: 0;
+	letter-spacing: 0.18em;
+	line-height: 1.5;
 
 	&:not(:first-child) {
 		margin-top: 2.2em;
