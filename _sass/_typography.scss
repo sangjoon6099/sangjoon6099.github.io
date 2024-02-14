@@ -6,7 +6,11 @@ html {
 		font-size: 10px;
 	}
 }
-body {
+@font-face{
+	src:url("../fonts/'KoPubWorld Batang_Pro Medium'.otf");
+	font-family:"kword";
+}
+
 	line-height: 1.75;
 	font-size: 2em;
 }
@@ -14,8 +18,8 @@ body {
 body,
 input,
 textarea {
-	font-family: "Nanum Myeongjo", serif;
-  	font-weight: 500;
+	font-family:"kword";
+  	font-weight: 400;
   	font-style: normal;
 	color: #3A4145;
 }
@@ -27,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Nanum Myeongjo", serif;
+	font-family:"kword";
  	font-weight: 500;
   	font-style: normal;
 	font-optical-sizing: auto;
