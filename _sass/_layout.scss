@@ -203,4 +203,9 @@ spimage {
 		 padding-left:2%;
 	}
 }
-	
+.spimage img{
+	transition: all 0.2s linear;
+}
+.spimage:hover img{
+	 transform: scale(1.7);
+}
