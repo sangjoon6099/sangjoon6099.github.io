@@ -189,11 +189,11 @@ footer {
 }
 spimage {
 	display:inline-block
-	.i2{
+	i2{
 		width: 25%;
 		padding-left:16%;
 		}
-	.i3{
+	i3{
 		width: 25%;
 		&:not(:first-child) {
 		padding-left:2%;
@@ -204,13 +204,13 @@ spimage {
 		 padding-left:2%;
 	}
 }
-.i2,
-.i3,
-.i4 img{
+i2,
+i3,
+i4 img{
 	transition: all 0.2s linear;
 }
-.i2,
-.i3,
-.i4:hover img{
+i2,
+i3,
+i4:hover img{
 	 transform: scale(1.7);
 }
