@@ -204,9 +204,13 @@ spimage {
 		 padding-left:2%;
 	}
 }
-.spimage img{
+.i2,
+.i3,
+.i4 img{
 	transition: all 0.2s linear;
 }
-.spimage:hover img{
+.i2,
+.i3,
+.i4:hover img{
 	 transform: scale(1.7);
 }
