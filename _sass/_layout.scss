@@ -187,30 +187,6 @@ footer {
 .sangjoon:hover img {
   transform: scale(2.0);
 }
-spimage {
+.sangjoon {
 	display:inline-block;
-}
-i2{
-	width: 25%;
-	padding-left:16%;
-}
-i3{
-	width: 25%;
-	&:not(:first-child) {
-	padding-left:2%;
-	}
-}
-i4{
-	width: 12%;
-	padding-left:2%;
-}
-i2,
-i3,
-i4 img{
-	transition: all 0.2s linear;
-}
-i2,
-i3,
-i4:hover img{
-	 transform: scale(1.7);
 }
