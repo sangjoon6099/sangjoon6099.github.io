@@ -29,7 +29,7 @@ header {
 
 	@media (min-width: $mobile-break) {
 		background-size: contain;
-		background-position: 0% calc(100% + 20px);
+		background-position: calc(50% - 200px) calc(100% + 20px);
 
 		&.main-hero {
 			height: 80vh;
